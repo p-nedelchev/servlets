@@ -26,7 +26,7 @@ public final class Jetty {
             public void contextInitialized(ServletContextEvent servletContextEvent) {
                 ServletContext servletContext = servletContextEvent.getServletContext();
 
-                servletContext.addServlet("chainletServlet", new Chainlet()).addMapping("/page1", "/page2", "/page3");=======
+                servletContext.addServlet("chainletServlet", new Chainlet()).addMapping("/page1", "/page2", "/page3");
                 servletContext.addServlet("counterServlet", new Counter()).addMapping("/counter");
             }
 
